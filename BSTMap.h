@@ -23,7 +23,6 @@ public:
   }
 };
 
-class BSTPrinter;
 
 class BSTMap {
   friend class BSTPrinter;
