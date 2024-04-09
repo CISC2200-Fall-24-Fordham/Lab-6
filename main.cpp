@@ -1,6 +1,5 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "BSTMap.h"
-#include "BSTPrinter.h"
 #include "doctest.h"
 #include <sstream>
 #include <string>
@@ -26,9 +25,8 @@ TEST_CASE("bstmap") {
 
   SUBCASE("remove") {
     avengersRanking.remove("Steve");
-    // ds::BSTPrinter::print<string, int>(avengersRanking, cout);
     stringstream ss;
-    BSTPrinter::print(avengersRanking, ss);
+    avengersRanking.print(ss);
     CHECK(ss.str() == "                                                     Thor:3                                                     \n"
                       "                            ┌───────────────────────────+───────────────────────────┐                           \n"
                       "                         Bruce:4                                                 Tony:2                         \n"
