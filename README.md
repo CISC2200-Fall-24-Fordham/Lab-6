@@ -1,1 +1,1 @@
-# lab6_nonetemplate
+# lab6
