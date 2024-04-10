@@ -20,16 +20,17 @@ int main()
   avengersRanking.put("Wanda", 7);
   avengersRanking.print (cout);
 
+  //Test remove the root 
+  cout <<"After removing Steve\n";
+  avengersRanking.remove("Steve");
+  avengersRanking.print (cout);
 
+  //Todo: Add more test cases to remove: remove a leaf node, remove a non-leaf, none-root node... 
 
-
-
-    cout <<"After removing Steve\n";
-    avengersRanking.remove("Steve");
-    avengersRanking.print (cout);
-
-    assert(avengersRanking.get("Thor") == 3);
-    assert(avengersRanking.get("Clint") == 6);
+  //Test lookup with key and see if the right value is returned 
+  assert(avengersRanking.get("Thor") == 3);
+  assert(avengersRanking.get("Clint") == 6);
+  //Add more testcase, what if the key is not found? 
 
 
 }
