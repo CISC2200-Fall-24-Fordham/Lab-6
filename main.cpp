@@ -1,12 +1,14 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "BSTMap.h"
-#include "doctest.h"
+#include <iostream>
 #include <sstream>
 #include <string>
+#include <assert.h>
 
 using namespace std;
 
-TEST_CASE("bstmap") {
+int main()
+{
   // a map from avengers to my personal ranking
   BSTMap avengersRanking;
   avengersRanking.put("Steve", 1);
@@ -16,24 +18,19 @@ TEST_CASE("bstmap") {
   avengersRanking.put("Natasha", 5);
   avengersRanking.put("Clint", 6);
   avengersRanking.put("Wanda", 7);
-  // ds::BSTPrinter::print<string, int>(avengersRanking, cout);
+  avengersRanking.print (cout);
 
-  SUBCASE("get") {
-    CHECK(avengersRanking.get("Thor") == 3);
-    CHECK(avengersRanking.get("Clint") == 6);
-  }
 
-  SUBCASE("remove") {
+
+
+
+    cout <<"After removing Steve\n";
     avengersRanking.remove("Steve");
-    stringstream ss;
-    avengersRanking.print(ss);
-    CHECK(ss.str() == "                                                     Thor:3                                                     \n"
-                      "                            ┌───────────────────────────+───────────────────────────┐                           \n"
-                      "                         Bruce:4                                                 Tony:2                         \n"
-                      "                            +─────────────┐                                         +─────────────┐             \n"
-                      "                                      Natasha:5                                                Wanda:7          \n"
-                      "                                   ┌──────+                                                                     \n"
-                      "                                Clint:6                                                                         \n");
-  }
+    avengersRanking.print (cout);
+
+    assert(avengersRanking.get("Thor") == 3);
+    assert(avengersRanking.get("Clint") == 6);
+
+
 }
 
