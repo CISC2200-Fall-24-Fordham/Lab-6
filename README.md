@@ -36,9 +36,9 @@ Please implement the following member functions in the **BSTMap.h**.
 2.  Implement **remove** member function that removes the node with the given key. You can assume the key exists in the BST.
 3.  Test your functions by adding more testcases in  **main.cpp**.
 4.  The following are some optional practice questions that you can work on:
-    -- implement **size** member function to return the total number of nodes in the BST.
-    -- implement a constructor that takes in an array of Keys and an array of Values, and build a optimal BST.
-    -- implement a **print** member function to display the nodes in the BST in the ascending order. 
+    - implement **size** member function to return the total number of nodes in the BST.
+    - implement a constructor that takes in an array of Keys and an array of Values, and build a optimal BST.
+    - implement a **print** member function to display the nodes in the BST in the ascending order. 
     
    
 ## Hints
@@ -48,9 +48,9 @@ Follow the example to write some more testcases as needed to make sure your func
 
 ## Submission 
 
-Submit your **BSTMap.h** file at the following link by TBA , Tuesday, midnight (11:59pm).
+Submit your **BSTMap.h** file at the following link by April 24, Wednesday, midnight (11:59pm).
 
-Submission Link TBA 
+[ Submission Link](https://storm.cis.fordham.edu:8443/web/project/1770)
 
 The autograder compiles and tests your programs using 
 some testcases that are different from those in **main.cpp**. If your program fails some testcases, go back to review your code, and test your member functions
