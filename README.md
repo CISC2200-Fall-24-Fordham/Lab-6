@@ -35,6 +35,10 @@ Please implement the following member functions in the **BSTMap.h**.
 1.  Implement **get** member function that performs a look up with a key, and it shall return the value.
 2.  Implement **remove** member function that removes the node with the given key. You can assume the key exists in the BST.
 3.  Test your functions by adding more testcases in  **main.cpp**.
+4.  The following are some optional practice questions that you can work on:
+    -- implement **size** member function to return the total number of nodes in the BST.
+    -- implement a constructor that takes in an array of Keys and an array of Values, and build a optimal BST.
+    
    
 ## Hints
 
