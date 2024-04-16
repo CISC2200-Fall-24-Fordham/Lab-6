@@ -9,27 +9,29 @@ using namespace std;
 
 int main()
 {
-  // a map from avengers to my personal ranking
+  // a map from rankings to avengers 
   BSTMap avengersRanking;
-  avengersRanking.put("Steve", 1);
-  avengersRanking.put("Tony", 2);
-  avengersRanking.put("Thor", 3);
-  avengersRanking.put("Bruce", 4);
-  avengersRanking.put("Natasha", 5);
-  avengersRanking.put("Clint", 6);
-  avengersRanking.put("Wanda", 7);
+  avengersRanking.put(4,"Bruce");
+  avengersRanking.put(2,"Tony");
+  avengersRanking.put(3,"Thor");
+  avengersRanking.put(1,"Steve");
+  avengersRanking.put(5,"Natasha");
+  avengersRanking.put(6,"Clint");
+  avengersRanking.put(7,"Wanda");
   avengersRanking.print (cout);
 
   //Test remove the root 
-  cout <<"After removing Steve\n";
-  avengersRanking.remove("Steve");
+  cout <<"After removing 4\n";
+  avengersRanking.remove(4);
   avengersRanking.print (cout);
+
+  
 
   //Todo: Add more test cases to remove: remove a leaf node, remove a non-leaf, none-root node... 
 
   //Test lookup with key and see if the right value is returned 
-  assert(avengersRanking.get("Thor") == 3);
-  assert(avengersRanking.get("Clint") == 6);
+  assert(avengersRanking.get(3)=="Thor");
+  assert(avengersRanking.get(6)=="Clint");
   //Add more testcase, what if the key is not found? 
 
 
