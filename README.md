@@ -7,11 +7,11 @@ The key type is fixed to **string**, and the value type is fixed to **int**.
 
 From your terminal (mac or WSL/Ubunto) window, you can use the following command to download it:
 ```
-git clone https://github.com/CISC2200-Spring2024/lab6.git
+git clone https://github.com/CISC2200-Spring2024/lab6_nonetemplate.git
 ```
 Alternatively, you can use the following command to download the starter code as a zip file:
 ```
-wget https://github.com/CISC2200-Spring2024/lab6/archive/refs/heads/main.zip
+wget https://github.com/CISC2200-Spring2024/lab6_nonetemplate/archive/refs/heads/main.zip
 ```
 
 and then unzip it (if it's not automatically unzipped): 
